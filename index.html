@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Accountbiz Launch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..700&display=swap">
+<style>
+/* Layout: one calm green field. Headline top-left, the countdown as an oversized odometer across the full width, then the product as a ledger of rows.
+   Subject detail: cash-book margin rules and ruled lines in the hero, a day ruler from 00:00 to 19:11 IST under the clock. */
+:root {
+  --bg: #0A2B21;
+  --bg-deep: #071D16;
+  --surface: #0E3528;
+  --ink: #EDF4EE;
+  --muted: #9FB9AA;
+  --line: rgba(237, 244, 238, .14);
+  --line-strong: rgba(237, 244, 238, .3);
+  --accent: #F4B942;
+  --accent-ink: #0A2B21;
+  --glow: rgba(244, 185, 66, .16);
+  --live: #5BE3A0;
+  --bad: #FF8A7A;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Geist", "Segoe UI", system-ui, sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #F2F5EF; --bg-deep: #E6EDE6; --surface: #FFFFFF; --ink: #0B2B21; --muted: #51695B;
+    --line: rgba(11, 43, 33, .14); --line-strong: rgba(11, 43, 33, .3);
+    --accent: #A36300; --accent-ink: #FFFFFF; --glow: rgba(163, 99, 0, .12); --live: #0E8A57; --bad: #B3261E;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #F2F5EF; --bg-deep: #E6EDE6; --surface: #FFFFFF; --ink: #0B2B21; --muted: #51695B;
+  --line: rgba(11, 43, 33, .14); --line-strong: rgba(11, 43, 33, .3);
+  --accent: #A36300; --accent-ink: #FFFFFF; --glow: rgba(163, 99, 0, .12); --live: #0E8A57; --bad: #B3261E;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
